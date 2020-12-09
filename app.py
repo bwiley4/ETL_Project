@@ -6,7 +6,6 @@ from sqlalchemy import create_engine, func
 from flask import Flask, jsonify
 
 # Connect to Postgres Database
-# NEED TO INPUT CORRECT CONNECTION STRING
 # connection_string = f"postgres:postgres@localhost:5432/quotes_db"
 # engine = create_engine(f'postgresql://{connection_string}')
 
@@ -14,11 +13,6 @@ engine = create_engine("postgresql://postgres:postgres@localhost:5432/quotes_db"
 Base = automap_base()
 Base.prepare(engine, reflect=True)
 
-# Save References To Each Table
-# NEED TO INSERT CORRECT TABLE NAMES
-# Quotes = Base.classes.quotes
-# Authors = Base.classes.author
-# Tags = Base.classes.tags
 session = Session(engine)
 
 # Create Flask App
