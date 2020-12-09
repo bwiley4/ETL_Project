@@ -24,9 +24,9 @@ In Postgres, we created 3 tables to hold our information and use to link to our 
 
 Using our Flask API, we created a site that contained 3 routes that contained specific information jsonified:
     - ("/"):
-        - homepage to list the routes available
+        - Homepage to list the routes available.
     - ("/quotes"):
-        - quote info in a json list containing the text, author name, and tags of each
-        - total number of quotes
+        - Quote info in a json list containing the text, author name, and tags of each
+        - total number of quotes.
     - ("/top10tags"):
-        - json list of the tag name and the total number of quotes with the tag of the top 10 tags used on the webiste
+        - Json list of the tag name and the total number of quotes with the tag of the top 10 tags used on the website.
